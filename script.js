@@ -6,43 +6,57 @@ const toogleBtn=document.getElementById('toggle');
 const closeBtn=document.getElementById('close');
 
 
-const data={
+const data=[
 {
-    image: ''
+    image: 'https://source.unsplash.com/random/?backgrounds/',
     text: "I m Hungry"
 },
 {
-    image: ''
+    image: 'https://source.unsplash.com/random/?nature/',
     text: "I m Hungry"
 },
 {
-    image: ''
+    image: 'https://source.unsplash.com/random/',
     text: "I m Hungry"
 },
 {
-    image: ''
+    image: 'https://source.unsplash.com/random/',
     text: "I m Hungry"
 },
 {
-    image: ''
-    text: "I m Hungry"
-},
-
-{
-    image: ''
-    text: "I m Hungry"
-},
-{
-    image: ''
+    image: '',
     text: "I m Hungry"
 },
 
-};
+{
+    image: '',
+    text: "I m Hungry"
+},
+{
+    image: '',
+    text: "I m Hungry"
+},
+
+];
 
 data.forEach(createBox) ;
 
 // Create speech boxes
 
 function createBox(item){
-    console.log("hello");
+    
+    // create box in ui
+
+    const box =document.createElement('div');
+
+    const {image,text}=item;
+
+    box.classList.add('box');
+    box.innerHTML=`
+    <img src= "${image}" alt="${text}"/>
+    <p class "info"> ${text}</p> `;
+
+    // todo speak event
+
+    main.appendChild(box);
 }
