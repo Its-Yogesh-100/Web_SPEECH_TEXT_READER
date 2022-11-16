@@ -12,7 +12,7 @@ const data=[
     text: "I m Hungry"
 },
 {
-    image: 'https://source.unsplash.com/random/?nature/',
+    image: 'https://source.unsplash.com/random/200x200/?nature/',
     text: "I m Hungry"
 },
 {
@@ -32,6 +32,21 @@ const data=[
     image: '',
     text: "I m Hungry"
 },
+{
+    image: '',
+    text: "I m Hungry"
+},
+
+{
+    image: '',
+    text: "I m Hungry"
+},
+
+{
+    image: '',
+    text: "I m Hungry"
+},
+
 {
     image: '',
     text: "I m Hungry"
@@ -52,9 +67,10 @@ function createBox(item){
     const {image,text}=item;
 
     box.classList.add('box');
+
     box.innerHTML=`
     <img src= "${image}" alt="${text}"/>
-    <p class "info"> ${text}</p> `;
+    <p class="info"> ${text}</p> `;
 
     // todo speak event
 
