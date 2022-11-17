@@ -155,4 +155,12 @@ document.getElementById('text-box').classList.remove('show'));
 
 // change voice
 voiceSelect.addEventListener('change',setVoice);
+
+//READ TEXT BOX BUTTON
+
+readBtn.addEventListener('click',() =>{
+    setTextMessage(textarea.value);
+    speakText();
+
+});
 getVoices();
