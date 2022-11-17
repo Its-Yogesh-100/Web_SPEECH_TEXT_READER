@@ -13,28 +13,28 @@ const data=[
 },
 {
     image: 'https://source.unsplash.com/random/200x200/?nature/',
-    text: "I m Hungry"
+    text: "I aṁ Happy"
 },
 {
     image: 'https://source.unsplash.com/random/',
-    text: "I m Hungry"
+    text: "What is your name?"
 },
 {
     image: 'https://source.unsplash.com/random/',
-    text: "I m Hungry"
+    text: "I am a speech to text Reader"
 },
 {
     image: '',
-    text: "I m Hungry"
+    text: "GOOD MORNING"
 },
 
 {
     image: '',
-    text: "I m Hungry"
+    text: "I am your Friend"
 },
 {
     image: '',
-    text: "I m Hungry"
+    text: "Stay Motivated"
 },
 
 {
