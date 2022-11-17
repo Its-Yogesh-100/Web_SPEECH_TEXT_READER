@@ -51,6 +51,15 @@ const data=[
     image: '',
     text: "I m Hungry"
 },
+{
+    image: '',
+    text: "I m Hungry"
+},
+
+{
+    image: '',
+    text: "I m Hungry"
+},
 
 ];
 
@@ -74,5 +83,76 @@ function createBox(item){
 
     // todo speak event
 
+    box.addEventListener('click',() =>{
+        setTextMessage(text);
+        speakText();
+
+        //Add active effect
+
+        box.classList.add('active');
+
+        setTimeout(() => box.classList.remove('active'),800);
+    });
+
     main.appendChild(box);
 }
+
+
+//INIT SPEECH SYSTEM
+
+const message=new SpeechSynthesisUtterance();
+
+// array to store voices
+
+let voices=[];
+
+function getVoices() {
+    voices=speechSynthesis.getVoices();
+
+    voices.forEach(voice =>
+    {
+        const option=document.createElement('option');
+
+        option.value=voice.name;
+        option.innerText=`${voice.name} ${voice.lang}`;
+
+        voiceSelect.appendChild(option);
+    });
+    
+}
+
+//set text message
+
+function setTextMessage(text)
+{
+    message.text=text;
+}
+
+//Speak text
+function speakText(){
+speechSynthesis.speak(message);
+}
+
+// set voice
+
+function setVoice(e){
+    message.voice=voices.find(voice => voice.name===e.target.value);
+}
+// addding event listener voice changed
+
+speechSynthesis.addEventListener('voiceschanged',getVoices);
+
+// Adding the toggle functionality
+
+toogleBtn.addEventListener('click',() =>
+document.getElementById('text-box').classList.toggle('show'));
+
+
+// close 
+
+closeBtn.addEventListener('click',() =>
+document.getElementById('text-box').classList.remove('show'));
+
+// change voice
+voiceSelect.addEventListener('change',setVoice);
+getVoices();

@@ -7,7 +7,7 @@
 }
 
 body{
-    background: #ffefea;
+    background: orange;
     font-family: 'Lato',sans-serif;
     min-height: 100vh;
     margin: 0;
@@ -24,7 +24,7 @@ h1{
 
 .btn{
     cursor: pointer;
-    background-color: darksalmon;
+    background-color: red;
     border: 0;
     border-radius: 4px;
     color: #fff;
@@ -33,7 +33,7 @@ h1{
 }
 
 .btn:active{
-    transform:scale(0.9);
+    transform:scale(0.98);
 }
 
 .btn:focus,select:focus{
@@ -59,12 +59,17 @@ h1{
     transition: all 1s ease-in-out;
 }
 
+.text-box.show{
+    transform:translate(-50%,0px);
+}
 .text-box select{
     background-color: darksalmon;
     border: 0;
     color: white;
-    font-size: 30px;
+    font-size: 18px;
+    height: 30px;
     width: 100%;
+    
 }
 
 .text-box textarea{
@@ -116,7 +121,7 @@ main{
 }
 
 .box .info{
-    background-color:darksalmon;
+    background-color:rgb(255, 65, 1);
     color: white;
     font-size: 18px;
     letter-spacing: 1px;
