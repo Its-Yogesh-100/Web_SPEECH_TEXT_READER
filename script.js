@@ -16,11 +16,11 @@ const data=[
     text: "I aṁ Happy"
 },
 {
-    image: 'https://source.unsplash.com/random/',
+    image: 'https://source.unsplash.com/random/?outerspace',
     text: "What is your name?"
 },
 {
-    image: 'https://source.unsplash.com/random/',
+    image: 'https://source.unsplash.com/random/?hd',
     text: "I am a speech to text Reader"
 },
 {
