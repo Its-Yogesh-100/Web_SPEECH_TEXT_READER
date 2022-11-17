@@ -12,7 +12,7 @@ const data=[
     text: "I m Hungry"
 },
 {
-    image: 'https://source.unsplash.com/random/200x200/?nature/',
+    image: 'https://source.unsplash.com/random/?nature/',
     text: "I aṁ Happy"
 },
 {
@@ -24,41 +24,41 @@ const data=[
     text: "I am a speech to text Reader"
 },
 {
-    image: '',
+    image: 'https://source.unsplash.com/random/?morning/',
     text: "GOOD MORNING"
 },
 
 {
-    image: '',
+    image: 'https://source.unsplash.com/random/?Universe/',
     text: "I am your Friend"
 },
 {
-    image: '',
+    image: 'https://source.unsplash.com/random/?neon/',
     text: "Stay Motivated"
 },
 
 {
-    image: '',
-    text: "I m Hungry"
+    image: 'https://source.unsplash.com/random/?milkyway/',
+    text: "I like to travel in space"
 },
 
 {
-    image: '',
-    text: "I m Hungry"
+    image: 'https://source.unsplash.com/random/?ocean/',
+    text: "I love to talk NEW  persons"
 },
 
 {
-    image: '',
-    text: "I m Hungry"
+    image: 'https://source.unsplash.com/random/?rollercoster/',
+    text: "HELLO SIR "
 },
 {
-    image: '',
-    text: "I m Hungry"
+    image: 'https://source.unsplash.com/random/?thankyou',
+    text: "Thankyou"
 },
 
 {
-    image: '',
-    text: "I m Hungry"
+    image: 'https://source.unsplash.com/random/?time/',
+    text: "Have a tea"
 },
 
 ];
